@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Landing from "./components/Landing/Landing.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import ActiveWorkout from "./components/Workout/ActiveWorkout.jsx";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Landing />} />
                         <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="/workout" element={<ActiveWorkout />} />
                         <Route path="*" element={<h1>Not Found</h1>} />
                     </Routes>
                 </main>
